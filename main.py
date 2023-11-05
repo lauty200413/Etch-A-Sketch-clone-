@@ -32,9 +32,9 @@ def clear():
 my_screen.listen()
 my_screen.onkeypress(key="w", fun=move_forwards)
 my_screen.onkeypress(key="s", fun=move_backwards)
-my_screen.onkeypress(key="a", fun=turn_counter_clockwise)
-my_screen.onkeypress(key="d", fun=turn_clockwise)
-my_screen.onkeypress(key="space", fun=clear)
+my_screen.onkey(key="a", fun=turn_counter_clockwise)
+my_screen.onkey(key="d", fun=turn_clockwise)
+my_screen.onkey(key="space", fun=clear)
 
 
 my_screen.exitonclick()
